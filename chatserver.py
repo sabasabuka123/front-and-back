@@ -4,10 +4,10 @@ import yagmail
 
 
 app = Flask(__name__)
-server = '192.168.1.4'
+server = 'serv 1.1.'
 database = 'test'
 username = 'sa'
-password = 'SqlPassW0rd'
+password = 'pass'
 cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 @app.route("/")
 def hello_world():
